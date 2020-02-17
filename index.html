@@ -113,7 +113,7 @@
 							<h2>2020.05.24(일요일) 결혼합니다.</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p><a href="#" class="btn btn-default btn-sm">일정 등록(AND/IOS)</a></p>
-							<p><a href="#" class="btn btn-default btn-sm">지정석 신청</a></p>
+							<p><a href="#" class="btn btn-default btn-sm" id="reserveSeat">지정석 신청</a></p>
 						</div>
 					</div>
 				</div>
@@ -622,6 +622,15 @@
         day: 24,
         enableUtc: false
     });
+		
+	const query = new URLSearchParams(window.location.search);
+	
+	document.getElementById('reserveSeat')
+		.addEventListener('click', (e) => {
+			e.preventDefault();
+			query.get('p') === 'i' ? console.log('승익이네 자리') : console.log('세은이네 자리');
+		});
+
 </script>
 
 	</body>
