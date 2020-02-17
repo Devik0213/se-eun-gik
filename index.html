@@ -626,7 +626,10 @@
 	const query = new URLSearchParams(window.location.search);
 	
 	document.getElementById('reserveSeat')
-		.addEventListener('click', () => query.get('p') === 'i' ? console.log('승익이네 자리') : console.log('세은이네 자리'));
+		.addEventListener('click', (e) => {
+			e.preventDefault();
+			query.get('p') === 'i' ? console.log('승익이네 자리') : console.log('세은이네 자리');
+		});
 
 </script>
 
