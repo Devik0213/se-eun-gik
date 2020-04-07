@@ -59,7 +59,7 @@ a:hover, a:active, a:focus {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, figure {
@@ -878,7 +878,8 @@ form label {
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
-  background: #fff !important;
+  opacity: 0.6;
+  background: #FFF !important;
   color: #F14E95;
   border: none !important;
   font-size: 14px;
@@ -940,16 +941,16 @@ form label {
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  width: 90px;
+  height: 90px;
+  background: rgba(241, 78, 149, 0.3);
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: relative;
-  animation: pulse 1s ease infinite;
+  animation: pulse 2s ease infinite;
 }
 
 @keyframes pulse {
@@ -979,14 +980,14 @@ form label {
 }
 
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 30px;
+  font-size: 25px;
   /* amounts */
 }
 
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   /* words */
 }
 
@@ -1250,6 +1251,12 @@ form label {
   #fh5co-testimonial .wrap-testimony .testimony-slide blockquote {
     width: 100%;
   }
+}
+blockquote p {
+  font-style: italic;
+  color: #FF989f;
+  font-size: 5px;
+  line-height: 1.2em;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide blockquote p {
   font-style: italic;
